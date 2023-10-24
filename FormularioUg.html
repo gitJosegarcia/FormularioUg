@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro de Vehículos</title>
+</head>
+<body>
+    <h2>Formulario de Registro de Vehículos</h2>
+    <form action="#" method="post">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required><br><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required><br><br>
+
+        <label for="anio">Año:</label>
+        <select id="anio" name="anio">
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+        </select><br><br>
+
+        <label for="tipo">Tipo de Vehículo:</label>
+        <input type="radio" id="auto" name="tipo" value="Auto">
+        <label for="auto">Auto</label>
+        <input type="radio" id="moto" name="tipo" value="Moto">
+        <label for="moto">Moto</label><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="detalles">Detalles del Vehículo:</label><br>
+        <textarea id="detalles" name="detalles" rows="4" cols="50"></textarea><br><br>
+
+        <label for="imagen-vehiculo">Sube una imagen del vehículo:</label>
+        <input type="file" id="imagen-vehiculo" name="imagen-vehiculo"><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+
+    <h2>Tabla de Vehículos Registrados</h2>
+    <table border="1">
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Tipo</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Ford</td>
+            <td>Focus</td>
+            <td>2022</td>
+            <td>Auto</td>
+            <td style="background-color: red;"></td>
+        </tr>
+        <tr>
+            <td>Honda</td>
+            <td>Civic</td>
+            <td>2023</td>
+            <td>Auto</td>
+            <td style="background-color: blue;"></td>
+        </tr>
+    </table>
+</body>
+</html>
